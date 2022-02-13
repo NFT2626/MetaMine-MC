@@ -1,0 +1,61 @@
+{
+  "name": "late",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ethers-react/web3modal": "0.0.1",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "assert": "^2.0.0",
+    "bootstrap": "^5.1.3",
+    "buffer": "^6.0.3",
+    "fs": "0.0.1-security",
+    "https-browserify": "^1.0.0",
+    "os": "^0.1.2",
+    "os-browserify": "^0.3.0",
+    "react": "^17.0.2",
+    "react-app-rewired": "^2.1.11",
+    "react-bootstrap": "^2.0.0",
+    "react-copy-to-clipboard": "^5.0.4",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-popup": "^0.10.0",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "^5.0.0",
+    "react-scroll": "^1.8.4",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "styled-components": "^5.3.3",
+    "url": "^0.11.0",
+    "web-vitals": "^1.1.2",
+    "web3": "^1.7.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {}
+}
