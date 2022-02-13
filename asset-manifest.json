@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.74a44a50.css",
-    "main.js": "/static/js/main.322024f3.js",
-    "static/js/787.bbf678c2.chunk.js": "/static/js/787.bbf678c2.chunk.js",
-    "static/media/MinecraftTen-VGORe.ttf": "/static/media/MinecraftTen-VGORe.cd1235551b5f89f4710f.ttf",
-    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/index.html",
-    "main.74a44a50.css.map": "/static/css/main.74a44a50.css.map",
-    "main.322024f3.js.map": "/static/js/main.322024f3.js.map",
-    "787.bbf678c2.chunk.js.map": "/static/js/787.bbf678c2.chunk.js.map"
+    "main.css": "/MetaMineMC/static/css/main.5e10e5bb.css",
+    "main.js": "/MetaMineMC/static/js/main.649d022e.js",
+    "static/js/787.bbf678c2.chunk.js": "/MetaMineMC/static/js/787.bbf678c2.chunk.js",
+    "static/media/MinecraftTen-VGORe.ttf": "/MetaMineMC/static/media/MinecraftTen-VGORe.cd1235551b5f89f4710f.ttf",
+    "static/media/slick.svg": "/MetaMineMC/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/MetaMineMC/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/MetaMineMC/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/MetaMineMC/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/MetaMineMC/index.html",
+    "main.5e10e5bb.css.map": "/MetaMineMC/static/css/main.5e10e5bb.css.map",
+    "main.649d022e.js.map": "/MetaMineMC/static/js/main.649d022e.js.map",
+    "787.bbf678c2.chunk.js.map": "/MetaMineMC/static/js/787.bbf678c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.74a44a50.css",
-    "static/js/main.322024f3.js"
+    "static/css/main.5e10e5bb.css",
+    "static/js/main.649d022e.js"
   ]
 }
