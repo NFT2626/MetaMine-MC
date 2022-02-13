@@ -471,7 +471,7 @@ const SaveComponent = () => {
                     }
                 ];
 
-                var contract = new web3.eth.Contract(abi, '0x7e0Bc040A8d9d2D9BB1f940aab85de00923657e0');
+                var contract = new web3.eth.Contract(abi, '0x08D4eA6ec6a3cd891A86cA60A56aA2ac2174a9DD');
                 web3.eth.getAccounts().then((addresses) => {
                     contract.methods.editPlot(tokenId, cid).send({from: addresses[0]});
                 })
