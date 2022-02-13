@@ -66,7 +66,7 @@ const HeroSection = () => {
         <img src="./images/creativerse.png" alt="" className="image" />
         <h1 className="title">MetaMine</h1>
         <p className="m-0 subtitle">
-          Decentralized Minecraft Protocol, secured by Ethereum
+          Decentralized Minecraft Protocol, secured by Ethereum fork of Creativerse.
         </p>
         <Link
           to="learnmore"
