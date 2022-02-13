@@ -113,7 +113,7 @@ const HowtoJoin = () => {
       details:
         "Don’t have Minecraft? You can still explore the builds with the online web map of the world.",
       buttonText: "view map",
-      buttonLink: "http://localhost:25565/",
+      buttonLink: "http://localhost:3306/",
       copyLink: ""
     },
     {
