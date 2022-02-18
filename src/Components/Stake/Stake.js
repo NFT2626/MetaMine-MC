@@ -390,7 +390,7 @@ const StakeComponent = () => {
                     "type": "address"
                 }
             ],
-            "name": "setCreateTokenContract",
+            "name": "setCraftTokenContract",
             "outputs": [],
             "stateMutability": "nonpayable",
             "type": "function"
@@ -1072,7 +1072,7 @@ const StakeComponent = () => {
                     "type": "address"
                 }
             ],
-            "name": "setCreateTokenContract",
+            "name": "setCraftTokenContract",
             "outputs": [],
             "stateMutability": "nonpayable",
             "type": "function"
@@ -1753,7 +1753,7 @@ const StakeComponent = () => {
                     "type": "address"
                 }
             ],
-            "name": "setCreateTokenContract",
+            "name": "setCraftTokenContract",
             "outputs": [],
             "stateMutability": "nonpayable",
             "type": "function"
@@ -2225,7 +2225,7 @@ const StakeComponent = () => {
           <p className="title">Stake Plot #{tokenId}</p>
           <p className="subtitle">Stake for</p>
           <input type="number" min="1" max="48" value={time} onChange={handleBothTokenRewardAndTime}></input><p className="subtitle"> x 30 = {time*30} days.</p>
-          <p className="subtitle">This will give you a total of <b>{tokenReward} CREATE</b> over <b>{time*30} days.</b></p>
+          <p className="subtitle">This will give you a total of <b>{tokenReward} Craft</b> over <b>{time*30} days.</b></p>
           <button className="button" onClick={lock}>Stake Plot</button>
           <p className="warning"><b>Warning: This will lock your plot in your wallet, making it untradable for {time*30} days.</b></p>
           <p className="warning2"></p>

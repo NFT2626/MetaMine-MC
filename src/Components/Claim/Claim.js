@@ -348,7 +348,7 @@ const ClaimComponent = () => {
                     "type": "address"
                 }
             ],
-            "name": "setCreateTokenContract",
+            "name": "setCraftTokenContract",
             "outputs": [],
             "stateMutability": "nonpayable",
             "type": "function"
@@ -1019,7 +1019,7 @@ const ClaimComponent = () => {
                       "type": "address"
                   }
               ],
-              "name": "setCreateTokenContract",
+              "name": "setCraftTokenContract",
               "outputs": [],
               "stateMutability": "nonpayable",
               "type": "function"
@@ -1437,7 +1437,7 @@ const ClaimComponent = () => {
 
   return (
       <Wrapper>
-          <p className="title">Total Claimable Amount: {claimable*10**-18} CREATE</p>
+          <p className="title">Total Claimable Amount: {claimable*10**-18} Craft</p>
           <button className="button" onClick={claim}>Claim All</button>
       </Wrapper>
   )

@@ -366,7 +366,7 @@ const SaveComponent = () => {
                                 "type": "address"
                             }
                         ],
-                        "name": "setCreateTokenContract",
+                        "name": "setCraftTokenContract",
                         "outputs": [],
                         "stateMutability": "nonpayable",
                         "type": "function"
