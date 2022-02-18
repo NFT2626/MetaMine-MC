@@ -63,23 +63,21 @@ const LinkComponent = () => {
     async function run(uuid) {
         if (window.ethereum) {
             const web3 = new Web3(window.ethereum);
-            await window.ethereum.enable();
+            const accounts = await window.ethereum.request({method: "eth_requestAccounts"});
             
             if (!(uuid == null)) {
-                web3.eth.getAccounts().then((accounts) => {
-                    web3.eth.personal.sign("I agree that the account signing this message will be linked to the Minecraft Java account with the UUID of " + uuid, accounts[0], "").then(
-                        (msg) => {
-                            var element = document.getElementsByClassName("signedPrefix")[0];
-                            element.innerHTML =  "Paste this command into Minecraft:"
-                            element = document.getElementsByClassName("signed")[0];
-                            element.innerHTML = "<b>/link " + msg + "</b>";
-                            handleCopyText(element);
-                            element = document.getElementsByClassName("signedButton")[0];
-                            element.style.display = "flex";
-                            
-                        }
-                    );
-                })
+              web3.eth.personal.sign("I agree that the account signing this message will be linked to the Minecraft Java account with the UUID of " + uuid, accounts[0], "").then(
+                  (msg) => {
+                      var element = document.getElementsByClassName("signedPrefix")[0];
+                      element.innerHTML =  "Paste this command into Minecraft:"
+                      element = document.getElementsByClassName("signed")[0];
+                      element.innerHTML = "<b>/link " + msg + "</b>";
+                      handleCopyText(element);
+                      element = document.getElementsByClassName("signedButton")[0];
+                      element.style.display = "flex";
+                      
+                  }
+              );
                 
             }
         }

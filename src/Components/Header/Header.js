@@ -21,12 +21,30 @@ const Wrapper = styled.div`
   }
   .connect {
     color: #19f919;
-    font-weight: 700;
+    font-weight: 750;
+    font-size: 25px;
+    padding-left: 50px;
+  }
+
+  .wallet {
+    color: #f6ff00;
+    font-weight: 600;
     font-size: 18px;
   }
 
   .a {
     text-decoration: none;
+  }
+
+  @media only screen and (max-width: 767px) {
+    #walletmobile {
+      display: none;
+    }
+
+    .connect {
+      padding-left: 0px;
+      font-weight: 700;
+    }
   }
 `;
 
@@ -40,7 +58,7 @@ const Header = () => {
   return (
     <Wrapper>
       <img
-        src="./images/creativerse.png"
+        src="./images/CHADCRAFT.png"
         alt="#"
         className="logo"
         onClick={scrollTotop}
@@ -49,6 +67,11 @@ const Header = () => {
       }
       <p className="m-0 connect">Play Now!</p> 
       </a>
+      <div id="walletmobile">
+      <a href="/claim" className="a">
+      <p className="m-0 wallet"><u>Stake Plots</u></p>
+      </a>
+      </div>
     </Wrapper>
   );
 };

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { animateScroll as scroll } from "react-scroll";
 
 const Wrapper = styled.div`
   display: flex;
@@ -19,33 +18,32 @@ const Wrapper = styled.div`
     width: 40px;
     cursor: pointer;
   }
-  .connect {
-    color: #19f919;
-    font-weight: 700;
-    font-size: 18px;
-  }
   .a {
     text-decoration: none;
+  }
+
+  .wallet {
+    color: #f6ff00;
+    font-weight: 600;
+    font-size: 18px;
   }
 `;
 
 const HeaderNotHome = () => {
-  const scrollToBottom = () => {
-    scroll.scrollToBottom();
-  };
   return (
     <Wrapper>
     <a href="/">
       <img
-        src="../../images/creativerse.png"
+        src="../../images/CHADCRAFT.png"
         alt="logo"
         className="logo"
       />
       </a>
-      <a onClick={scrollToBottom} href="#" className="a"> {// eslint-disable-line
-      }
-      <p className="m-0 connect">Play Now!</p> 
+      <div id="walletmobile">
+      <a href="/claim" className="a">
+      <p className="m-0 wallet"><u>Stake Plots</u></p>
       </a>
+      </div>
     </Wrapper>
   );
 };

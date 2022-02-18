@@ -30,6 +30,11 @@ const Wrapper = styled.div`
   .metamask {
       font-size: 15px;
       color: #fff;
+  }
+  
+  .mintInfo {
+      font-size: 15px;
+      color: #fff;
   }`;
 
 function unpair(p) {
@@ -46,19 +51,58 @@ function unpair(p) {
 const SaveComponent = () => {
     const { tokenId, cid } = useParams();
     const {x, y} = unpair(tokenId);
+
+    async function changeNetwork() {
+        // Check if MetaMask is installed
+        // MetaMask injects the global API into window.ethereum
+        if (window.ethereum) {
+          try {
+            // check if the chain to connect to is installed
+            await window.ethereum.request({
+              method: 'wallet_switchEthereumChain',
+              params: [{ chainId: '0x89' }], // chainId must be in hexadecimal numbers
+            });
+          } catch (error) {
+            // This error code indicates that the chain has not been added to MetaMask
+            // if it is not, then install it into the user MetaMask
+            if (error.code === 4902) {
+              try {
+                await window.ethereum.request({
+                  method: 'wallet_addEthereumChain',
+                  params: [
+                    {
+                      chainId: '0x89',
+                      rpcUrls: ['https://polygon-rpc.com/'],
+                      blockExplorerUrls: ['https://polygonscan.com'],
+                      chainName: 'Polygon Mainnet',
+                      nativeCurrency: {
+                        name: 'MATIC',
+                        symbol: 'MATIC',
+                        decimals: 18
+                      }
+                    },
+                  ],
+                });
+              } catch (addError) {
+                console.error(addError);
+              }
+            }
+            console.error(error);
+          }
+        } else {
+          // if no window.ethereum then MetaMask is not installed
+          alert('MetaMask is not installed. Please consider installing it: https://metamask.io/download.html');
+        } 
+      }
     
     async function run(tokenId, cid) {
+        await changeNetwork();
         if (window.ethereum) {
             const web3 = new Web3(window.ethereum);
-            await window.ethereum.enable();
+            const accounts = await window.ethereum.request({method: "eth_requestAccounts"});
 
             if (!(tokenId == null || cid == null)) {
                 const abi = [
-                    {
-                        "inputs": [],
-                        "stateMutability": "nonpayable",
-                        "type": "constructor"
-                    },
                     {
                         "anonymous": false,
                         "inputs": [
@@ -113,6 +157,25 @@ const SaveComponent = () => {
                         "anonymous": false,
                         "inputs": [
                             {
+                                "indexed": false,
+                                "internalType": "uint256",
+                                "name": "tokenId",
+                                "type": "uint256"
+                            },
+                            {
+                                "indexed": false,
+                                "internalType": "string",
+                                "name": "cid",
+                                "type": "string"
+                            }
+                        ],
+                        "name": "Edit",
+                        "type": "event"
+                    },
+                    {
+                        "anonymous": false,
+                        "inputs": [
+                            {
                                 "indexed": true,
                                 "internalType": "address",
                                 "name": "from",
@@ -155,12 +218,12 @@ const SaveComponent = () => {
                     {
                         "inputs": [
                             {
-                                "internalType": "address",
-                                "name": "owner",
-                                "type": "address"
+                                "internalType": "uint256",
+                                "name": "tokenId",
+                                "type": "uint256"
                             }
                         ],
-                        "name": "balanceOf",
+                        "name": "claim",
                         "outputs": [
                             {
                                 "internalType": "uint256",
@@ -168,7 +231,7 @@ const SaveComponent = () => {
                                 "type": "uint256"
                             }
                         ],
-                        "stateMutability": "view",
+                        "stateMutability": "nonpayable",
                         "type": "function"
                     },
                     {
@@ -192,7 +255,7 @@ const SaveComponent = () => {
                                 "type": "uint256"
                             }
                         ],
-                        "stateMutability": "nonpayable",
+                        "stateMutability": "payable",
                         "type": "function"
                     },
                     {
@@ -201,73 +264,16 @@ const SaveComponent = () => {
                                 "internalType": "uint256",
                                 "name": "tokenId",
                                 "type": "uint256"
-                            }
-                        ],
-                        "name": "getApproved",
-                        "outputs": [
-                            {
-                                "internalType": "address",
-                                "name": "",
-                                "type": "address"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [
-                            {
-                                "internalType": "address",
-                                "name": "owner",
-                                "type": "address"
                             },
                             {
-                                "internalType": "address",
-                                "name": "operator",
-                                "type": "address"
-                            }
-                        ],
-                        "name": "isApprovedForAll",
-                        "outputs": [
-                            {
-                                "internalType": "bool",
-                                "name": "",
-                                "type": "bool"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [],
-                        "name": "name",
-                        "outputs": [
-                            {
-                                "internalType": "string",
-                                "name": "",
-                                "type": "string"
-                            }
-                        ],
-                        "stateMutability": "view",
-                        "type": "function"
-                    },
-                    {
-                        "inputs": [
-                            {
                                 "internalType": "uint256",
-                                "name": "tokenId",
+                                "name": "time",
                                 "type": "uint256"
                             }
                         ],
-                        "name": "ownerOf",
-                        "outputs": [
-                            {
-                                "internalType": "address",
-                                "name": "",
-                                "type": "address"
-                            }
-                        ],
-                        "stateMutability": "view",
+                        "name": "lock",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
                         "type": "function"
                     },
                     {
@@ -325,6 +331,19 @@ const SaveComponent = () => {
                         "inputs": [
                             {
                                 "internalType": "address",
+                                "name": "a",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "setAdmin",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
                                 "name": "operator",
                                 "type": "address"
                             },
@@ -337,6 +356,318 @@ const SaveComponent = () => {
                         "name": "setApprovalForAll",
                         "outputs": [],
                         "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "tokenContract",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "setCreateTokenContract",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "govContract",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "setGovContract",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "r",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "setRate",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "collector",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint96",
+                                "name": "numerator",
+                                "type": "uint96"
+                            }
+                        ],
+                        "name": "setRoyalty",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "from",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "address",
+                                "name": "to",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "tokenId",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "transferFrom",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "tokenId",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "unlock",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "constructor"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "owner",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "balanceOf",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "tokenId",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "claimable",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "tokenId",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "doesExist",
+                        "outputs": [
+                            {
+                                "internalType": "bool",
+                                "name": "",
+                                "type": "bool"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "tokenId",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "getApproved",
+                        "outputs": [
+                            {
+                                "internalType": "address",
+                                "name": "",
+                                "type": "address"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "tokenId",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "getTokenLockInfo",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address",
+                                "name": "owner",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "address",
+                                "name": "operator",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "isApprovedForAll",
+                        "outputs": [
+                            {
+                                "internalType": "bool",
+                                "name": "",
+                                "type": "bool"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "tokenId",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "isLocked",
+                        "outputs": [
+                            {
+                                "internalType": "bool",
+                                "name": "",
+                                "type": "bool"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "name",
+                        "outputs": [
+                            {
+                                "internalType": "string",
+                                "name": "",
+                                "type": "string"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "tokenId",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "ownerOf",
+                        "outputs": [
+                            {
+                                "internalType": "address",
+                                "name": "",
+                                "type": "address"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "_tokenId",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "_salePrice",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "royaltyInfo",
+                        "outputs": [
+                            {
+                                "internalType": "address",
+                                "name": "",
+                                "type": "address"
+                            },
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "view",
                         "type": "function"
                     },
                     {
@@ -434,8 +765,14 @@ const SaveComponent = () => {
                         "type": "function"
                     },
                     {
-                        "inputs": [],
-                        "name": "totalSupply",
+                        "inputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "time",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "totalClaim",
                         "outputs": [
                             {
                                 "internalType": "uint256",
@@ -447,34 +784,34 @@ const SaveComponent = () => {
                         "type": "function"
                     },
                     {
-                        "inputs": [
-                            {
-                                "internalType": "address",
-                                "name": "from",
-                                "type": "address"
-                            },
-                            {
-                                "internalType": "address",
-                                "name": "to",
-                                "type": "address"
-                            },
+                        "inputs": [],
+                        "name": "totalSupply",
+                        "outputs": [
                             {
                                 "internalType": "uint256",
-                                "name": "tokenId",
+                                "name": "",
                                 "type": "uint256"
                             }
                         ],
-                        "name": "transferFrom",
-                        "outputs": [],
-                        "stateMutability": "nonpayable",
+                        "stateMutability": "view",
                         "type": "function"
                     }
                 ];
 
-                var contract = new web3.eth.Contract(abi, '0x08D4eA6ec6a3cd891A86cA60A56aA2ac2174a9DD');
-                web3.eth.getAccounts().then((addresses) => {
-                    contract.methods.editPlot(tokenId, cid).send({from: addresses[0]});
+                var contract = new web3.eth.Contract(abi, '0x4a37C37Fd0cc375fAe9c9aa5a34533106419F21e');
+
+                contract.methods.doesExist(tokenId).call()
+                .then((doesExist) => {
+                    if (doesExist) {
+                        contract.methods.editPlot(tokenId, cid).send({from: accounts[0]});
+                    } else {
+                        contract.methods.editPlot(tokenId, cid).send({
+                            from: accounts[0], 
+                            value: "1000000000000000000"
+                        });
+                    }
                 })
+                
             }
         }
     }
@@ -486,9 +823,10 @@ const SaveComponent = () => {
     return (
         <Wrapper>
             <p className="title">Plot  #{tokenId}</p>
-            <p className="subtitle">Located on the MetaMine as ({x},{y})</p>
+            <p className="subtitle">Located on the CHADCRAFT as ({x},{y})</p>
             <p className="cid">Compiled Plot CID: {cid}</p>
             <p className="metamask">Please accept the Metamask transaction that pops up to save. If Metamask doesn't pop up, refresh and try again.</p>
+            <p className="mintInfo">Note: Minting fee for new plots is 5 MATIC. Existing plots only cost gas (~$0.01) to save block data.</p>
 
         </Wrapper>
     );

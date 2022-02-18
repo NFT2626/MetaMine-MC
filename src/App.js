@@ -8,6 +8,8 @@ import Home from "./pages/Index";
 import Footer from "./Components/Footer/Footer";
 import Save from "./pages/Save";
 import Link from "./pages/Link";
+import Claim from "./pages/Claim";
+import Stake from "./pages/Stake";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
 }
           <Route path='/save/:tokenId/:cid' element={<Save />}></Route>
           <Route path='/link/:uuid' element={<Link />}></Route>
+          <Route path='/claim' element={<Claim />}></Route>
+          <Route path='/stake/:tokenId' element={<Stake />}></Route>
         </Routes>
       </Router>
       <Footer />

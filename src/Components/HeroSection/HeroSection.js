@@ -63,10 +63,10 @@ const HeroSection = () => {
   return (
     <Col className="mx-auto">
       <Wrapper>
-        <img src="./images/creativerse.png" alt="" className="image" />
-        <h1 className="title">MetaMine</h1>
+        <img src="./images/CHADCRAFT.png" alt="" className="image" />
+        <h1 className="title">CHADCRAFT</h1>
         <p className="m-0 subtitle">
-          Decentralized Minecraft Protocol, secured by Ethereum fork of Creativerse.
+          Decentralized Minecraft Protocol, secured by Ethereum
         </p>
         <Link
           to="learnmore"

@@ -98,8 +98,8 @@ const Wrapper = styled.div`
 
 const LearnMore = () => {
   const learnMoreArray = [
-    { name: "Plot #3", image: "./images/1.png" },
-    { name: "Plot #7", image: "./images/2.png" },
+    { name: "Plot #1624", image: "./images/1.png" },
+    { name: "Plot #0", image: "./images/2.png" },
     { name: "Plot #12", image: "./images/3.png" },
     { name: "Plot #11", image: "./images/4.png" },
   ];
@@ -168,7 +168,7 @@ const LearnMore = () => {
           </Slider>
         </div>
         <div className="d-flex justify-content-center align-items-center flex-column">
-          <h2 className="title pt-5">Join The MetaMine Today!</h2>
+          <h2 className="title pt-5">Join The CHADCRAFT Today!</h2>
           <Link
             to="howtojoin"
             spy={true}

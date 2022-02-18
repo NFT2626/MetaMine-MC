@@ -41,7 +41,7 @@ const Footer = () => {
   return (
     <Wrapper>
       <Col className="mx-auto">
-        <a href="https://twitter.com/MetaMineMC" target="_blank" rel="noreferrer">
+        <a href="https://twitter.com/CHADCRAFTMC" target="_blank" rel="noreferrer">
           {" "}
           <BsTwitter className="icon " />
         </a>
