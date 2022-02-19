@@ -44,7 +44,7 @@ const Wrapper = styled.div`
 
   @media only screen and (max-width: 577px) {
     .image {
-      width: 100%;
+      width: 10%;
     }
     .title {
       font-size: 16px;
@@ -66,7 +66,7 @@ const HeroSection = () => {
         <img src="./images/CHADCRAFT2.png" alt="" className="image" />
         <h1 className="title">CHADCRAFT</h1>
         <p className="m-0 subtitle">
-        Minecraft + Blockchain + CHAD's where CHAD's get to craft !
+        Minecraft + Blockchain + CHAD's where they get to Craft and Survive !
         </p>
         <Link
           to="learnmore"
