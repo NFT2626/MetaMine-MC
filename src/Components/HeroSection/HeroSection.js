@@ -42,9 +42,9 @@ const Wrapper = styled.div`
     padding-top: 4px;
   }
 
-  @media only screen and (max-width: 920px) {
+  @media only screen and (max-width: 577px) {
     .image {
-      width: 80%;
+      width: 100%;
     }
     .title {
       font-size: 16px;
