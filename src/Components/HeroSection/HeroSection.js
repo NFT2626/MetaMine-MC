@@ -13,8 +13,18 @@ const Wrapper = styled.div`
   .image {
     width: 577px;
   }
-
-
+  .title {
+    font-size: 21px;
+    font-weight: bold;
+    color: #19f919;
+    text-align: center;
+    margin: 0;
+  }
+  .subtitle {
+    font-size: 18px;
+    text-align: center;
+    color: #f6ff00;
+  }  
   .button {
     border: 0;
     outline: 0;
