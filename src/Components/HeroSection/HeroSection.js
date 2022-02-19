@@ -11,10 +11,10 @@ const Wrapper = styled.div`
   padding: 80px 10px;
   padding-top: 110px;
   .image {
-    width: 200px;
+    width: 577px;
   }
   .title {
-    font-size: 55px;
+    font-size: 35px;
     font-weight: bold;
     color: #19f919;
     text-align: center;
@@ -42,12 +42,12 @@ const Wrapper = styled.div`
     padding-top: 4px;
   }
 
-  @media only screen and (max-width: 577px) {
+  @media only screen and (max-width: 520px) {
     .image {
-      width: 960px;
+      width: 40%;
     }
     .title {
-      font-size: 16px;
+      font-size: 26px;
     }
     .subtitle {
       font-size: 16px;
