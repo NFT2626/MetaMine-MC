@@ -44,10 +44,10 @@ const Wrapper = styled.div`
 
   @media only screen and (max-width: 520px) {
     .image {
-      width: 40%;
+      width: 80%;
     }
     .title {
-      font-size: 36px;
+      font-size: 26px;
     }
     .subtitle {
       font-size: 16px;
@@ -63,10 +63,10 @@ const HeroSection = () => {
   return (
     <Col className="mx-auto">
       <Wrapper>
-        <img src="./images/CHADCRAFT.png" alt="" className="image" />
+        <img src="./images/CHADCRAFT2.png" alt="" className="image" />
         <h1 className="title">CHADCRAFT</h1>
         <p className="m-0 subtitle">
-          Decentralized Minecraft Protocol, secured by Ethereum
+        Minecraft + Blockchain + CHAD's where CHAD's get to craft !
         </p>
         <Link
           to="learnmore"
