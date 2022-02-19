@@ -14,11 +14,7 @@ const Wrapper = styled.div`
     width: 577px;
   }
 
-  .subtitle {
-    font-size: 24px;
-    text-align: center;
-    color: #f6ff00;
-  }
+
   .button {
     border: 0;
     outline: 0;
