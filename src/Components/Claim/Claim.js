@@ -737,7 +737,7 @@ const ClaimComponent = () => {
         }
     ];
 
-      var contract = new web3.eth.Contract(abi, '0xCEBD046193C76491690f5B3AC4C09B77f1C978fA');
+      var contract = new web3.eth.Contract(abi, '0xe0eE9632807D0E90Ca770a4A35590e233791Df28');
       contract.methods.balanceOf(accounts[0]).call()
       .then((balance) => {
           for (var i=0; i<balance; i++) {
@@ -1408,7 +1408,7 @@ const ClaimComponent = () => {
           }
       ];
   
-        var contract = new web3.eth.Contract(abi, '0xCEBD046193C76491690f5B3AC4C09B77f1C978fA');
+        var contract = new web3.eth.Contract(abi, '0xe0eE9632807D0E90Ca770a4A35590e233791Df28');
 
         const getClaimableTotal = async () => {
           contract.methods.balanceOf(accounts[0]).call()

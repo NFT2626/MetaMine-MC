@@ -798,7 +798,7 @@ const StakeComponent = () => {
         }
     ];
 
-      var contract = new web3.eth.Contract(abi, '0xCEBD046193C76491690f5B3AC4C09B77f1C978fA');
+      var contract = new web3.eth.Contract(abi, '0xe0eE9632807D0E90Ca770a4A35590e233791Df28');
 
       contract.methods.lock(tokenId, time).send({from: accounts[0]})
     }
@@ -1480,7 +1480,7 @@ const StakeComponent = () => {
         }
     ];
 
-      var contract = new web3.eth.Contract(abi, '0xCEBD046193C76491690f5B3AC4C09B77f1C978fA');
+      var contract = new web3.eth.Contract(abi, '0xe0eE9632807D0E90Ca770a4A35590e233791Df28');
 
       contract.methods.unlock(tokenId).send({from: accounts[0]})
     }
@@ -2161,7 +2161,7 @@ const StakeComponent = () => {
         }
     ];
   
-    var contract = new web3.eth.Contract(abi, '0xCEBD046193C76491690f5B3AC4C09B77f1C978fA');
+    var contract = new web3.eth.Contract(abi, '0xe0eE9632807D0E90Ca770a4A35590e233791Df28');
     contract.methods.isLocked(tokenId).call()
     .then((isLocked) => {
       contract.methods.getTokenLockInfo(tokenId).call()
