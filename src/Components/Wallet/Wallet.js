@@ -539,7 +539,7 @@ const WalletComponent = () => {
             .then((tokenId) => {
               contract.methods.tokenURI(tokenId).call()
               .then((metadataHash) => {
-                fetch('https://ipfs.io/ipfs/' + metadataHash)
+                fetch('https://ipfs.io/ipfs/' + metadataHash.substring(7))
                 .then((r) => {
                   r.json()
                   .then((json) => {
