@@ -13,13 +13,7 @@ const Wrapper = styled.div`
   .image {
     width: 577px;
   }
-  .title {
-    font-size: 35px;
-    font-weight: bold;
-    color: #19f919;
-    text-align: center;
-    margin: 0;
-  }
+
   .subtitle {
     font-size: 24px;
     text-align: center;
