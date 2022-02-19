@@ -47,7 +47,7 @@ const Wrapper = styled.div`
       width: 80%;
     }
     .title {
-      font-size: 26px;
+      font-size: 16px;
     }
     .subtitle {
       font-size: 16px;
