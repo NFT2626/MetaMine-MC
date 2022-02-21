@@ -113,14 +113,14 @@ const Wrapper = styled.div`
 const HowtoJoin = () => {
   const howToJoinArray = [
     {
-      title: "Public Server",
+      title: "CHADCRAFT Server",
       details:
-        "We run a public server that you can join to explore or build on.",
+        "CHADCRAFT server that you can join to explore or build and Mint on.",
 
-      soft: "Minecraft Java Edition 1.18.1",
-      serverIp: "Server IP: 147.185.221.194:60540",
+      soft: "Minecraft 1.18.1",
+      serverIp: "Server IP: 147.185.221.194:60542",
       buttonText: "copy ip",
-      copyLink: "147.185.221.194:60540",
+      copyLink: "147.185.221.194:60542",
     },
     {
       title: "Online Map",
