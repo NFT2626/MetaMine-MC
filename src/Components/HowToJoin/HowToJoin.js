@@ -118,16 +118,16 @@ const HowtoJoin = () => {
         "We run a public server that you can join to explore or build on.",
 
       soft: "Minecraft Java Edition 1.18.1",
-      serverIp: "Server IP: play.CHADCRAFTMC.com",
+      serverIp: "Server IP: 147.185.221.194:60540",
       buttonText: "copy ip",
-      copyLink: "play.CHADCRAFTMC.com",
+      copyLink: "147.185.221.194:60540",
     },
     {
       title: "Online Map",
       details:
         "Don’t have Minecraft? You can still explore the builds with the online web map of the world.",
       buttonText: "view map",
-      buttonLink: "http://137.74.246.121:3431/",
+      buttonLink: "http://147.185.221.194:60541/",
       copyLink: ""
     },
     {
