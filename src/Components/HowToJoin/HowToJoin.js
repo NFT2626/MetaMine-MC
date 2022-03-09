@@ -113,11 +113,11 @@ const Wrapper = styled.div`
 const HowtoJoin = () => {
   const howToJoinArray = [
     {
-      title: "CHADCRAFT Server",
+      title: "CHADCRAFT Java Server",
       details:
         "CHADCRAFT server that you can join to explore or build and Mint on.",
 
-      soft: "Minecraft 1.18.1",
+      soft: "Minecraft 1.18.1+",
       serverIp: "Server IP: 147.185.221.194:60542",
       buttonText: "copy ip",
       copyLink: "147.185.221.194:60542",
@@ -131,12 +131,14 @@ const HowtoJoin = () => {
       copyLink: ""
     },
     {
-      title: "Run a Server",
+      title: "CHADCRAFT Bedrock Server",
       details:
-        "Want to run your own CHADCRAFT server? It’s easy! Check out the Github for more information.",
-      buttonText: "github",
-      buttonLink: "https://github.com/CHADCRAFTMC",
-      copyLink: ""
+        "CHADCRAFT server that you can join to explore or build and Mint on.",
+
+      soft: "Minecraft 1.18.1+",
+      serverIp: "Server IP: 147.185.221.194:60540",
+      buttonText: "copy ip",
+      copyLink: "147.185.221.194:60540",
     },
     {
       title: "Learn More",
