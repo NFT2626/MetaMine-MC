@@ -45,7 +45,7 @@ const Footer = () => {
           {" "}
           <BsTwitter className="icon " />
         </a>
-        <a href="https://discord.gg/XEpzU6jygY" target="_blank" rel="noreferrer">
+        <a href="https://discord.com/invite/PYKCCHPE9D" target="_blank" rel="noreferrer">
           <FaDiscord className="icon mx-2" />
         </a>
         <BsChevronUp className="arrow" onClick={scrollTotop} />

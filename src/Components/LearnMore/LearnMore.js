@@ -168,7 +168,7 @@ const LearnMore = () => {
           </Slider>
         </div>
         <div className="d-flex justify-content-center align-items-center flex-column">
-          <h2 className="title pt-5">Join The CHADCRAFT Today!</h2>
+          <h2 className="title pt-5">Join The AlternativeSea Today!</h2>
           <Link
             to="howtojoin"
             spy={true}

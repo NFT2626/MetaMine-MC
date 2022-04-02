@@ -63,10 +63,10 @@ const HeroSection = () => {
   return (
     <Col className="mx-auto">
       <Wrapper>
-        <img src="./images/CHADCRAFT2.png" alt="" className="image" />
-        <h1 className="title">CHADCRAFT</h1>
+        <img src="./images/AlternativeSea.png" alt="" className="image" />
+        <h1 className="title">AlternativeSea</h1>
         <p className="m-0 subtitle">
-        Minecraft + Blockchain + CHAD's where they get to Craft and Survive !
+        Minecraft + Blockchain + AlternativeSea get to Craft and Survive !
         </p>
         <Link
           to="learnmore"

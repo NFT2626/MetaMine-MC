@@ -113,39 +113,39 @@ const Wrapper = styled.div`
 const HowtoJoin = () => {
   const howToJoinArray = [
     {
-      title: "CHADCRAFT Java Server",
+      title: "Java Server",
       details:
-        "CHADCRAFT server that you can join to explore or build and Mint on.",
+        "server that you can join to explore or build and Mint on.",
 
-      soft: "Minecraft 1.18.1+",
-      serverIp: "Server IP: 147.185.221.194:60542",
+      soft: "Minecraft 1.18.2+",
+      serverIp: "Server IP: 103.195.103.177:25565",
       buttonText: "copy ip",
-      copyLink: "147.185.221.194:60542",
+      copyLink: "103.195.103.177:25565",
     },
     {
       title: "Online Map",
       details:
         "Don’t have Minecraft? You can still explore the builds with the online web map of the world.",
       buttonText: "view map",
-      buttonLink: "http://147.185.221.194:60541/",
+      buttonLink: "http://103.195.103.177:8123/",
       copyLink: ""
     },
     {
-      title: "CHADCRAFT Bedrock Server",
+      title: "Bedrock Server",
       details:
-        "CHADCRAFT server that you can join to explore or build and Mint on.",
+        "AlternativeSea server that you can join to explore or build and Mint on.",
 
       soft: "Minecraft 1.18.1+",
-      serverIp: "Server IP: 147.185.221.194:60540",
+      serverIp: "Server IP: metamine-craft.apexmc.co:19132",
       buttonText: "copy ip",
-      copyLink: "147.185.221.194:60540",
+      copyLink: "metamine-craft.apexmc.co:19132",
     },
     {
-      title: "Learn More",
+      title: "Opensea",
       details:
-        "interested in learning more about how this works? Check out the documentation for more information!",
-      buttonText: "Read The Docs",
-      buttonLink: "https://docs.CHADCRAFTMC.com",
+        "View and trade your plot(s) after minting or /save",
+      buttonText: "Go on Opensea",
+      buttonLink: "https://opensea.io/collection/chadcraft",
       copyLink: ""
     }
   ];
@@ -233,7 +233,7 @@ const HowtoJoin = () => {
             ))}
           </Slider>
         </div>
-        <p id="legal">CHADCRAFT is not affiliated with Mojang or Microsoft.</p>
+        <p id="legal">AlternativeSea is not affiliated with Mojang or Microsoft.</p>
       </Wrapper>
     </Col>
   );
