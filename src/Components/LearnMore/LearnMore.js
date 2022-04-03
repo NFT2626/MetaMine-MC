@@ -98,10 +98,10 @@ const Wrapper = styled.div`
 
 const LearnMore = () => {
   const learnMoreArray = [
-    { name: "Plot #1624", image: "./images/1.png" },
-    { name: "Plot #0", image: "./images/2.png" },
-    { name: "Plot #12", image: "./images/3.png" },
-    { name: "Plot #11", image: "./images/4.png" },
+    { name: "Plot #1624", image: "./images/plot.gif" },
+    { name: "Plot #0", image: "./images/plot.gif" },
+    { name: "Plot #12", image: "./images/plot.gif" },
+    { name: "Plot #11", image: "./images/plot.gif" },
   ];
   const settings = {
     dots: true,
