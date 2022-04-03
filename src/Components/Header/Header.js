@@ -58,7 +58,7 @@ const Header = () => {
   return (
     <Wrapper>
       <img
-        src="./images/HDdiamond.gif"
+        src="./images/diamond HDcropped.gif"
         alt="#"
         className="logo"
         onClick={scrollTotop}
