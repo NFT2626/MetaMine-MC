@@ -34,7 +34,7 @@ const HeaderNotHome = () => {
     <Wrapper>
     <a href="/">
       <img
-        src="../../images/CHADCRAFT.png"
+        src="../../images/HDdiamond.gif"
         alt="logo"
         className="logo"
       />
