@@ -639,7 +639,7 @@ const SaveComponent = () => {
                     } else {
                         contract.methods.editPlot(tokenId, cid).send({
                             from: accounts[0], 
-                            value: "500000"
+                            value: "5000000000000000000"
                         });
                     }
                 })
