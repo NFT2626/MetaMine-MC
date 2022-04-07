@@ -136,9 +136,9 @@ const HowtoJoin = () => {
         "AlternativeSea server that you can join to explore or build and Mint on.",
 
       soft: "Minecraft 1.18.1+",
-      serverIp: "Server IP: metamine-craft.apexmc.co:19132",
+      serverIp: "Server IP: 103.195.103.177:19132",
       buttonText: "copy ip",
-      copyLink: "metamine-craft.apexmc.co:19132",
+      copyLink: "103.195.103.177:19132",
     },
     {
       title: "Opensea",
