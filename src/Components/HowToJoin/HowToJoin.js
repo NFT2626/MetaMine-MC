@@ -91,6 +91,9 @@ const Wrapper = styled.div`
     #legal {
       padding-top: 50px;
     }
+    .image {
+      height: 300px;
+    }
   }
   @media only screen and (max-width: 520px) {
     .my-slider {
@@ -99,6 +102,9 @@ const Wrapper = styled.div`
     #legal {
       padding-top: 50px;
     }
+    .image {
+      height: 300px;
+    }
   }
   @media only screen and (max-width: 480px) {
     .my-slider {
@@ -106,6 +112,9 @@ const Wrapper = styled.div`
     }
     #legal {
       padding-top: 50px;
+    }
+    .image {
+      height: 300px;
     }
   }
 `;
