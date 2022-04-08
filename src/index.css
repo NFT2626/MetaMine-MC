@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #050a1f !important;
+  background: linear-gradient(rgba(20, 26, 35,0.55),rgba(20, 26, 35, 0.55)),
+				url("./imgages/2022-04-07_18.35.13.png") no-repeat center center fixed;
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
