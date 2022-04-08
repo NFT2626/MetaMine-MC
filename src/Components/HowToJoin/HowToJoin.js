@@ -113,9 +113,9 @@ const Wrapper = styled.div`
 const HowtoJoin = () => {
   const howToJoinArray = [
     {
-      title: "Minecraft Java",
+      title: "Java",
       details:
-        "AlternativeSea for Minecraft Java Only.",
+        "AlternativeSea for Minecraft Java launcher Only.",
 
       soft: "Minecraft 1.18.2+",
       serverIp: "Server IP: 103.195.103.177:25565",
@@ -123,9 +123,9 @@ const HowtoJoin = () => {
       copyLink: "103.195.103.177:25565",
     },
     {
-      title: "Minecraft Bedrock",
+      title: "Bedrock",
       details:
-        "AlternativeSea for Minecraft Android,Ios,Windows10,Switch,Ps5 and Xbox Bedrock client.",
+        "For Minecraft Android,Ios,Windows10,Switch,Ps5 and Xbox Bedrock launcher.",
 
       soft: "Minecraft 1.18.2+",
       serverIp: "Server IP: 103.195.103.177:19132",
@@ -133,7 +133,7 @@ const HowtoJoin = () => {
       copyLink: "103.195.103.177:19132",
     },
     {
-      title: "Online Map",
+      title: "DynMap",
       details:
         "Don’t have Minecraft? You can still explore the builds with the online web map of the world.",
       buttonText: "view map",
