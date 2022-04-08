@@ -41,11 +41,11 @@ const Footer = () => {
   return (
     <Wrapper>
       <Col className="mx-auto">
-        <a href="https://twitter.com/larvachads" target="_blank" rel="noreferrer">
+        <a href="https://discord.gg/2Ye7jsnvfx" target="_blank" rel="noreferrer">
           {" "}
           <BsTwitter className="icon " />
         </a>
-        <a href="https://discord.com/invite/PYKCCHPE9D" target="_blank" rel="noreferrer">
+        <a href="https://discord.gg/2Ye7jsnvfx" target="_blank" rel="noreferrer">
           <FaDiscord className="icon mx-2" />
         </a>
         <BsChevronUp className="arrow" onClick={scrollTotop} />
