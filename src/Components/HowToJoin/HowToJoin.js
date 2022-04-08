@@ -91,9 +91,6 @@ const Wrapper = styled.div`
     #legal {
       padding-top: 50px;
     }
-    .image {
-      height: 300px;
-    }
   }
   @media only screen and (max-width: 520px) {
     .my-slider {
@@ -102,9 +99,6 @@ const Wrapper = styled.div`
     #legal {
       padding-top: 50px;
     }
-    .image {
-      height: 300px;
-    }
   }
   @media only screen and (max-width: 480px) {
     .my-slider {
@@ -112,9 +106,6 @@ const Wrapper = styled.div`
     }
     #legal {
       padding-top: 50px;
-    }
-    .image {
-      height: 300px;
     }
   }
 `;
@@ -242,7 +233,6 @@ const HowtoJoin = () => {
             ))}
           </Slider>
         </div>
-        <img src="./images/11.png" alt="" className="image" />
         <p id="legal">AlternativeSea is not affiliated with Mojang or Microsoft.</p>
       </Wrapper>
     </Col>
