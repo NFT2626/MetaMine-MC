@@ -173,6 +173,7 @@ const LearnMore = () => {
         </div>
         <div className="d-flex justify-content-center align-items-center flex-column">
           <h2 className="title pt-5">Join The AlternativeSea Today!</h2>
+          <img src="./images/9.png" alt="" className="image" />
           <Link
             to="howtojoin"
             spy={true}
