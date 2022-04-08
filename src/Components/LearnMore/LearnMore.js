@@ -98,10 +98,10 @@ const Wrapper = styled.div`
 
 const LearnMore = () => {
   const learnMoreArray = [
-    { name: "Plot #1624", image: "./images/plot.gif" },
-    { name: "Plot #0", image: "./images/plot.gif" },
-    { name: "Plot #12", image: "./images/plot.gif" },
-    { name: "Plot #11", image: "./images/plot.gif" },
+    { name: "Plot", image: "./images/8.png" },
+    { name: "Plot", image: "./images/7.png" },
+    { name: "Plot", image: "./images/6.png" },
+    { name: "Plot", image: "./images/5.png" },
   ];
   const settings = {
     dots: true,
@@ -143,7 +143,7 @@ const LearnMore = () => {
     <Col className="mx-auto " id="learnmore" lg={11} xl={10} xxl={7}>
       <Wrapper>
         <h1 className="subtitle">
-          Every you save in game your world is synced to the blockchain and powered by IPFS. Build with
+          Every time you save in game your world is synced to the blockchain and powered by IPFS. Build with
           freedom, with no fear of censorship or loss of build data. Own a plot now build a community 
           around it and make it unique ! many more games and features are already installed like In-game economy,
           OneBlock,SkyWars,guns etc...and there is much more to come.
