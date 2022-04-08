@@ -107,8 +107,8 @@ const LearnMore = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 2,
+    slidesToScroll: 2,
     initialSlide: 0,
     swipeToSlide: true,
     responsive: [
