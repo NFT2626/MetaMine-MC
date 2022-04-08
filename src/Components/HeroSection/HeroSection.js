@@ -66,7 +66,7 @@ const HeroSection = () => {
         <img src="./images/AlternativeSea.png" alt="" className="image" />
         <h1 className="title">AlternativeSea</h1>
         <p className="m-0 subtitle">
-        Minecraft + Blockchain + AlternativeSea get to Craft and Survive !
+        Mint a Plot and become the master of your own survival World on AlternativeSea NoW!
         </p>
         <Link
           to="learnmore"
