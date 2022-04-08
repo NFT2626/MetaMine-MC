@@ -655,7 +655,7 @@ const SaveComponent = () => {
     return (
         <Wrapper>
             <p className="title">Plot  #{tokenId}</p>
-            <p className="subtitle">Located on the Creativerse as ({x},{y})</p>
+            <p className="subtitle">Located on the AlternativeSea as ({x},{y})</p>
             <p className="cid">Compiled Plot CID: {cid}</p>
             <p className="metamask">Please accept the Metamask transaction that pops up to save. If Metamask doesn't pop up, refresh and try again.</p>
             <p className="mintInfo">Note: Minting fee for new plots is 5 MATIC. Existing plots only cost gas (~$0.01) to save block data.</p>
