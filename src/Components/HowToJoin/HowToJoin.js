@@ -113,14 +113,24 @@ const Wrapper = styled.div`
 const HowtoJoin = () => {
   const howToJoinArray = [
     {
-      title: "Java Server",
+      title: "Minecraft Java",
       details:
-        "server that you can join to explore or build and Mint on.",
+        "AlternativeSea for Minecraft Java Only.",
 
       soft: "Minecraft 1.18.2+",
       serverIp: "Server IP: 103.195.103.177:25565",
       buttonText: "copy ip",
       copyLink: "103.195.103.177:25565",
+    },
+    {
+      title: "Minecraft Bedrock",
+      details:
+        "AlternativeSea for Minecraft Android,Ios,Windows10,Switch,Ps5 and Xbox Bedrock client.",
+
+      soft: "Minecraft 1.18.2+",
+      serverIp: "Server IP: 103.195.103.177:19132",
+      buttonText: "copy ip",
+      copyLink: "103.195.103.177:19132",
     },
     {
       title: "Online Map",
@@ -131,20 +141,10 @@ const HowtoJoin = () => {
       copyLink: ""
     },
     {
-      title: "Bedrock Server",
-      details:
-        "AlternativeSea server that you can join to explore or build and Mint on.",
-
-      soft: "Minecraft 1.18.1+",
-      serverIp: "Server IP: 103.195.103.177:19132",
-      buttonText: "copy ip",
-      copyLink: "103.195.103.177:19132",
-    },
-    {
       title: "Opensea",
       details:
         "View and trade your plot(s) after minting or /save",
-      buttonText: "Go on Opensea",
+      buttonText: "Opensea",
       buttonLink: "https://opensea.io/collection/alternativesea-plots",
       copyLink: ""
     }
