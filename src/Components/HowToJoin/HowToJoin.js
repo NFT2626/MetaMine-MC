@@ -145,7 +145,7 @@ const HowtoJoin = () => {
       details:
         "View and trade your plot(s) after minting or /save",
       buttonText: "Go on Opensea",
-      buttonLink: "https://opensea.io/collection/chadcraft",
+      buttonLink: "https://opensea.io/collection/alternativesea-plots",
       copyLink: ""
     }
   ];
