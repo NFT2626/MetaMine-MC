@@ -64,6 +64,7 @@ const HeroSection = () => {
     <Col className="mx-auto">
       <Wrapper>
         <img src="./images/plot3.gif" alt="" className="image" />
+        <img src="./images/AlternativeSea2.png" alt="" className="image" />
         <h1 className="title">AlternativeSea</h1>
         <p className="m-0 subtitle">
         Mint a Plot and become the master of your own survival World on AlternativeSea NoW!
