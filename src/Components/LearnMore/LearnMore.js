@@ -143,8 +143,10 @@ const LearnMore = () => {
     <Col className="mx-auto " id="learnmore" lg={11} xl={10} xxl={7}>
       <Wrapper>
         <h1 className="subtitle">
-          Every build saved on the blockchain and powered by IPFS. Build with
-          freedom, with no fear of censorship or loss of build data
+          Every you save in game your world is synced to the blockchain and powered by IPFS. Build with
+          freedom, with no fear of censorship or loss of build data. Own a plot now build a community 
+          around it and make it unique ! many more games and features are already installed like In-game economy,
+          OneBlock,SkyWars,guns etc...and there is much more to come.
         </h1>
         <Row className="pb-3 d-none d-lg-flex">
           {learnMoreArray.map((el, i) => (
