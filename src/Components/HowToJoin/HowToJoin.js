@@ -125,7 +125,7 @@ const HowtoJoin = () => {
     {
       title: "Bedrock",
       details:
-        "For Minecraft Android,Ios,Windows10,Switch,Ps5 and Xbox Bedrock launcher.",
+        "AlternativeSea for Minecraft Bedrock launcher Only.",
 
       soft: "Minecraft 1.18.2+",
       serverIp: "Server IP: 103.195.103.177:19132",
