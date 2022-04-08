@@ -142,7 +142,7 @@ const LearnMore = () => {
   return (
     <Col className="mx-auto " id="learnmore" lg={11} xl={10} xxl={7}>
       <Wrapper>
-        <img src="./images/AlternativeSea2.png" alt="" className="image" />
+        <img src="./images/8.png" alt="" className="image" />
         <h1 className="subtitle">
           Every time you save in game your world is synced to the blockchain and powered by IPFS. Build with
           freedom, with no fear of censorship or loss of build data. Own a plot now build a community 
