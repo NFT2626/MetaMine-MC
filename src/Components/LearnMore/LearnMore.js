@@ -98,7 +98,7 @@ const Wrapper = styled.div`
 
 const LearnMore = () => {
   const learnMoreArray = [
-    { name: "Plot", image: "./images/8.png" },
+    { name: "Plot", image: "./images/10.png" },
     { name: "Plot", image: "./images/7.png" },
     { name: "Plot", image: "./images/6.png" },
     { name: "Plot", image: "./images/5.png" },
@@ -174,6 +174,7 @@ const LearnMore = () => {
         <div className="d-flex justify-content-center align-items-center flex-column">
           <h2 className="title pt-5">Join The AlternativeSea Today!</h2>
           <img src="./images/9.png" alt="" className="image" />
+          <h2 className="title pt-5"> </h2>
           <Link
             to="howtojoin"
             spy={true}
