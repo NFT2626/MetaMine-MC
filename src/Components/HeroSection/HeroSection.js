@@ -63,8 +63,8 @@ const HeroSection = () => {
   return (
     <Col className="mx-auto">
       <Wrapper>
-        <img src="./images/plot3.gif" alt="" className="image" />
         <img src="./images/AlternativeSea2.png" alt="" className="image" />
+        <img src="./images/plot3.gif" alt="" className="image" />
         <Link
           to="learnmore"
           spy={true}
