@@ -233,6 +233,7 @@ const HowtoJoin = () => {
             ))}
           </Slider>
         </div>
+        <img src="./images/11.png" alt="" className="image" />
         <p id="legal">AlternativeSea is not affiliated with Mojang or Microsoft.</p>
       </Wrapper>
     </Col>
