@@ -128,7 +128,7 @@ const HowtoJoin = () => {
         "AlternativeSea for Minecraft Bedrock launcher Only.",
 
       soft: "Minecraft 1.18.2+",
-      serverIp: "Server IP: alternativesea.apexmc.co",
+      serverIp: "alternativesea.apexmc.co",
       buttonText: "copy ip",
       copyLink: "alternativesea.apexmc.co",
     },
