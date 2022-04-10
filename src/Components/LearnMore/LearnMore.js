@@ -142,7 +142,7 @@ const LearnMore = () => {
   return (
     <Col className="mx-auto " id="learnmore" lg={11} xl={10} xxl={7}>
       <Wrapper>
-        <img src="./images/8.png" alt="" className="image" />
+        <iframe width="100%" height="300" overflow="hidden" src="https://nft2626.github.io/slidshowplots/" title="Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <h1 className="title">Web3 Culture</h1>
         <h1 className="subtitle">
         <h1 className="subtitle"> </h1>
