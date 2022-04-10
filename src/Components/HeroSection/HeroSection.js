@@ -65,7 +65,7 @@ const HeroSection = () => {
       <Wrapper>
         <img src="./images/AlternativeSea2.png" alt="" className="image" />
         <img src="./images/plot3.gif" alt="" className="image" />
-        <iframe width="70%" height="300" position="center" src="https://codepen.io/nft2626/live/qBpKKjx/708a894ed36c7ffaca9d8a5f17ff56b2" title="Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="70%" height="300" position="center" src="https://www.alternativesea.com/" title="Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         <Link
           to="learnmore"
