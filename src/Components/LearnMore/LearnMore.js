@@ -17,11 +17,11 @@ const Wrapper = styled.div`
     color: #bfbfbf;
   }
   .name {
-    font-size: 24px;
+    font-size: 15px;
     font-weight: 700;
     color: #0fcff0;
     text-align: center;
-    padding: 15px 0;
+    padding: 25px 0;
     padding-bottom: 8px;
   }
   .image {
