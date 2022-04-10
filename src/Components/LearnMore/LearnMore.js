@@ -145,10 +145,20 @@ const LearnMore = () => {
         <img src="./images/8.png" alt="" className="image" />
         <h1 className="subtitle">
         <h1 className="subtitle">    </h1>
-          Every time you save in-game your world is synced to the blockchain and powered by IPFS. Build with
-          freedom, with no fear of censorship or loss of build data. Own a plot now build a community 
-          around it and make it unique ! many more games and features are already installed like In-game economy,
-          OneBlock,SkyWars,guns etc...and there is much more to come.
+        AlternativeSea are generative Plots with schematic, resource & feature data stored on chain and ipfs.
+        AlternativeSea can be played, explored and built in. You can save changes you make to your world so they reflect on your NFT. Build with
+        freedom, with no fear of censorship or loss of build data. Own a plot now build a Metaverse a community 
+        around it and make it unique ! many more games and features are already installed like In-game economy,
+        OneBlock,SkyWars,guns accessible to Plots owners etc...and there is much more to come.
+        </h1>
+        <h1 className="subtitle">    </h1>
+        <img src="./images/2022-04-09_16.17.21.png" alt="" className="image" />
+        <h1 className="subtitle">
+        <h1 className="subtitle">    </h1>
+        Hold A Plot get a World 
+        Every AlternativeSea Plot holder own a unique set of randomly generated terrain and rare features. 
+        Each world is 16,000,000 x 16,000,000 blocks in size and accessible from your Plot directly 
+        giving you nearly infinite space to start building your community and develop your metaverse.
         </h1>
         <Row className="pb-3 d-none d-lg-flex">
           {learnMoreArray.map((el, i) => (
