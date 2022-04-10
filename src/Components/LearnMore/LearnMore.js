@@ -34,7 +34,7 @@ const Wrapper = styled.div`
     font-size: 35px;
     font-weight: 700;
     text-align: center;
-    color: #00ff18;
+    color: #d5d5d5;
   }
   .slick-arrow {
     top: 60%;
