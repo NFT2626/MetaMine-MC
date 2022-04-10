@@ -153,7 +153,7 @@ const LearnMore = () => {
         OneBlock,SkyWars,guns accessible to Plots owners etc...and there is much more to come.
         </h1>
         <h1 className="subtitle">    </h1>
-        <iframe width="100%" height="300" overflow="hidden" src="https://nft2626.github.io/slideshow/" title="Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="300" border-radius="15px" overflow="hidden" src="https://nft2626.github.io/slideshow/" title="Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <h1 className="title">Hold A Plot get a World </h1>
         <h1 className="subtitle">
         <h1 className="subtitle"> </h1>
