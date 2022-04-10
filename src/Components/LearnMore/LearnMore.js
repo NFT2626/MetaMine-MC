@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   padding: 0 10px;
 
   .subtitle {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     text-align: center;
     color: #bfbfbf;

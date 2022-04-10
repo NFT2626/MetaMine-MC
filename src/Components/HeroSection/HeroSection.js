@@ -21,7 +21,7 @@ const Wrapper = styled.div`
     margin: 0;
   }
   .subtitle {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     color: #0fcff0;
   }  
