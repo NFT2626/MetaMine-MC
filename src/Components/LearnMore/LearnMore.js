@@ -163,9 +163,10 @@ const LearnMore = () => {
         </h1>
         <h1 className="subtitle">    </h1>
         <iframe width="100%" height="300" overflow="hidden" src="https://nft2626.github.io/slideshow/" title="Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h1 className="title">Don’t feel like to build a full Metaverse Just Play !</h1>
+        <h1 className="title">Don’t feel like to building a whole Metaverse ? Play !</h1>
         <h1 className="subtitle">
         <h1 className="subtitle"> </h1>
+        Just enjoy your plot explore invite friends to survive and build in your plots featuring caves, secret rooms, nether and ender world and other surprises or 
         Be prepared for the survival Adventure of your life in our custom Maps made By the Legendary Minecraft Builder "McMeddon"
         all in Multiplayer accessible to everyone off course plots owner will have non negligible advantages over the simple visitors, join the server
         by following the instructions below to start now !
