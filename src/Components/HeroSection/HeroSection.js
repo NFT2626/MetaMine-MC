@@ -44,7 +44,7 @@ const Wrapper = styled.div`
 
   @media only screen and (max-width: 520px) {
     .image {
-      width: 60%;
+      width: 100%;
     }
     .title {
       font-size: 26px;
