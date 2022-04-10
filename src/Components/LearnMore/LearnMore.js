@@ -153,13 +153,22 @@ const LearnMore = () => {
         OneBlock,SkyWars,guns accessible to Plots owners etc...and there is much more to come.
         </h1>
         <h1 className="subtitle">    </h1>
-        <iframe width="100%" height="300" overflow="hidden" src="https://nft2626.github.io/slideshow/" title="Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="300" overflow="hidden" src="https://nft2626.github.io/slidshowsworldmain/" title="Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <h1 className="title">Hold A Plot get a World </h1>
         <h1 className="subtitle">
         <h1 className="subtitle"> </h1>
         Every AlternativeSea Plot holder own a unique set of randomly generated terrain and rare features. 
         Each world is 16,000,000 x 16,000,000 blocks in size and accessible from your Plot via a "Portal" where you fully control the access. 
         Giving you nearly infinite space to start building your community and develop your Metaverse where your Plot act has a Lobby for your World.
+        </h1>
+        <h1 className="subtitle">    </h1>
+        <iframe width="100%" height="300" overflow="hidden" src="https://nft2626.github.io/slideshow/" title="Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h1 className="title">Don’t feel like to build a full Metaverse Just Play !</h1>
+        <h1 className="subtitle">
+        <h1 className="subtitle"> </h1>
+        Be prepared for the survival Adventure of your life in our custom Maps made By the Legendary Minecraft Builder "McMeddon"
+        all in Multiplayer accessible to everyone off course plots owner will have non negligible advantages over the simple visitors, join the server
+        by following the instructions below to start now !
         </h1>
         <Row className="pb-3 d-none d-lg-flex">
           {learnMoreArray.map((el, i) => (
