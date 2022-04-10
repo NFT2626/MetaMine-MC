@@ -118,9 +118,9 @@ const HowtoJoin = () => {
         "AlternativeSea for Minecraft Java launcher Only.",
 
       soft: "Minecraft 1.18.2+",
-      serverIp: "Server IP: 103.195.103.177:25565",
+      serverIp: "alternativesea.apexmc.co",
       buttonText: "copy ip",
-      copyLink: "103.195.103.177:25565",
+      copyLink: "alternativesea.apexmc.co",
     },
     {
       title: "Bedrock",
@@ -128,9 +128,9 @@ const HowtoJoin = () => {
         "AlternativeSea for Minecraft Bedrock launcher Only.",
 
       soft: "Minecraft 1.18.2+",
-      serverIp: "Server IP: 103.195.103.177:19132",
+      serverIp: "Server IP: alternativesea.apexmc.co",
       buttonText: "copy ip",
-      copyLink: "103.195.103.177:19132",
+      copyLink: "alternativesea.apexmc.co",
     },
     {
       title: "DynMap",
