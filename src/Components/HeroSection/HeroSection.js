@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   .title {
     font-size: 21px;
     font-weight: bold;
-    color: #19f919;
+    color: #d5d5d5;
     text-align: center;
     margin: 0;
   }

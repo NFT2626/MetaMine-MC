@@ -20,7 +20,7 @@ const Wrapper = styled.div`
     cursor: pointer;
   }
   .connect {
-    color: #19f919;
+    color: #d5d5d5;
     font-weight: 750;
     font-size: 25px;
     padding-left: 50px;
