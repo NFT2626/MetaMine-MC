@@ -144,11 +144,7 @@ const LearnMore = () => {
       <Wrapper>
         <img src="./images/8.png" alt="" className="image" />
         <h1 className="title">Web3 Culture</h1>
-        <iframe 
-          width: 100%;
-          height: 300px;
-          object-fit: cover;
-          border-radius: 15px; src="https://www.youtube.com/embed/d5Y2YgvRVkQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="315" position="center" src="https://www.youtube.com/embed/d5Y2YgvRVkQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <h1 className="subtitle">
         <h1 className="subtitle"> </h1>
         AlternativeSea are generative Plots with schematic, resource & feature data stored on chain and ipfs.
