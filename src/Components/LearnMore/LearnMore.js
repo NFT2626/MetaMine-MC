@@ -142,8 +142,8 @@ const LearnMore = () => {
   return (
     <Col className="mx-auto " id="learnmore" lg={11} xl={10} xxl={7}>
       <Wrapper>
-        <h1 className="title">Web3 Culture</h1>
         <img src="./images/8.png" alt="" className="image" />
+        <h1 className="title">Web3 Culture</h1>
         <iframe 
           width: 100%;
           height: 300px;
@@ -158,8 +158,8 @@ const LearnMore = () => {
         OneBlock,SkyWars,guns accessible to Plots owners etc...and there is much more to come.
         </h1>
         <h1 className="subtitle">    </h1>
-        <h1 className="title">Hold A Plot get a World </h1>
         <img src="./images/Hnet-image (1).gif" alt="" className="image" />
+        <h1 className="title">Hold A Plot get a World </h1>
         <h1 className="subtitle">
         <h1 className="subtitle"> </h1>
         Every AlternativeSea Plot holder own a unique set of randomly generated terrain and rare features. 
