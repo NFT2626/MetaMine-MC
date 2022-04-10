@@ -21,7 +21,7 @@ const Wrapper = styled.div`
     font-weight: 700;
     color: #0fcff0;
     text-align: center;
-    padding: 25px 0;
+    padding: 15px 0;
     padding-bottom: 8px;
   }
   .image {
@@ -31,7 +31,7 @@ const Wrapper = styled.div`
     border-radius: 0px;
   }
   .title {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 700;
     text-align: center;
     color: #00fcff;
@@ -163,7 +163,7 @@ const LearnMore = () => {
         </h1>
         <h1 className="subtitle">    </h1>
         <iframe width="100%" height="300" overflow="hidden" src="https://nft2626.github.io/slideshow/" title="Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h1 className="title">Don’t feel like to building a whole Metaverse ? Play !</h1>
+        <h1 className="title">Don’t feel like building a whole Metaverse ? Play !</h1>
         <h1 className="subtitle">
         <h1 className="subtitle"> </h1>
         Just enjoy your plot explore invite friends to survive and build in your plots featuring caves, secret rooms, nether and ender world and other surprises or 
