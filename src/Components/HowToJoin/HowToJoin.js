@@ -117,6 +117,7 @@ const HowtoJoin = () => {
       details:
         "Mint a plot to start Building your Metaverse.",
 
+      serverIp: "Choose your Plot #",
       buttonText: "Mint",
       buttonLink: "https://www.alternativesea.com",
       copyLink: ""
