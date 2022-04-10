@@ -65,7 +65,7 @@ const HeroSection = () => {
       <Wrapper>
         <img src="./images/AlternativeSea2.png" alt="" className="image" />
         <img src="./images/plot3.gif" alt="" className="image" />
-        <iframe width="100%" height="315" position="center" src="https://github.com/NFT2626/MetaMineMC/raw/main/public/videos/worlds.mp4?control=0" title="Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="315" position="center" src="https://github.com/NFT2626/MetaMineMC/raw/main/public/videos/worlds.mp4=1" title="Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe name='SimpleVideoPlayer' width='px' height='px' scrolling='no' src='https://simplevideoplayer.bubbleapps.io/player?video=2546644.30480765' marginwidth='0px' marginheight='0px' frameborder='0' id='simplevideoplayer' allowfullscreen=0> </iframe>
 
         <Link
