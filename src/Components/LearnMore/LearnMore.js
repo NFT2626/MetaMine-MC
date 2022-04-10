@@ -143,7 +143,6 @@ const LearnMore = () => {
     <Col className="mx-auto " id="learnmore" lg={11} xl={10} xxl={7}>
       <Wrapper>
         <img src="./images/8.png" alt="" className="image" />
-        <iframe width="100%" height="315" position="center" src="https://www.youtube.com/embed/d5Y2YgvRVkQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <h1 className="title">Web3 Culture</h1>
         <h1 className="subtitle">
         <h1 className="subtitle"> </h1>
@@ -154,7 +153,7 @@ const LearnMore = () => {
         OneBlock,SkyWars,guns accessible to Plots owners etc...and there is much more to come.
         </h1>
         <h1 className="subtitle">    </h1>
-        <img src="./images/Hnet-image (1).gif" alt="" className="image" />
+        <img src="./images/2022-04-09_16.43.04.png" alt="" className="image" />
         <h1 className="title">Hold A Plot get a World </h1>
         <h1 className="subtitle">
         <h1 className="subtitle"> </h1>

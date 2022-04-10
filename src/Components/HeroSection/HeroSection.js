@@ -65,6 +65,8 @@ const HeroSection = () => {
       <Wrapper>
         <img src="./images/AlternativeSea2.png" alt="" className="image" />
         <img src="./images/plot3.gif" alt="" className="image" />
+        <iframe width="100%" height="430" position="center" src="https://www.youtube.com/embed/d5Y2YgvRVkQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
         <Link
           to="learnmore"
           spy={true}
