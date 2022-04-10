@@ -19,7 +19,7 @@ const Wrapper = styled.div`
   .name {
     font-size: 24px;
     font-weight: 700;
-    color: #f6ff00;
+    color: #0fcff0;
     text-align: center;
     padding: 25px 0;
     padding-bottom: 8px;

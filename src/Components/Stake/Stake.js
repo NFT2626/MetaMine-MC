@@ -38,7 +38,7 @@ const Wrapper = styled.div`
   
   .subtitle {
     font-size: 25px;
-    color: #f6ff00;
+    color: #0fcff0;
   }
 
   .date {
@@ -48,7 +48,7 @@ const Wrapper = styled.div`
   
   .description {
     font-size: 18px;
-    color: #f6ff00;
+    color: #0fcff0;
   }
   
   .warning, .warning2 {

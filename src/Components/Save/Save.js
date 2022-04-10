@@ -19,7 +19,7 @@ const Wrapper = styled.div`
   
   .subtitle {
       font-size: 25px;
-      color: #f6ff00;
+      color: #0fcff0;
   }
   
   .cid {

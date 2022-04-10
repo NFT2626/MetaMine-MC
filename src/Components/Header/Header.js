@@ -27,7 +27,7 @@ const Wrapper = styled.div`
   }
 
   .wallet {
-    color: #f6ff00;
+    color: #0fcff0;
     font-weight: 600;
     font-size: 18px;
   }

@@ -20,7 +20,7 @@ const Wrapper = styled.div`
   
   .info {
     font-size: 25px;
-    color: #f6ff00;
+    color: #0fcff0;
   }
   
   .signed, .signedPrefix {

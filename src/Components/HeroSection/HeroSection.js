@@ -23,7 +23,7 @@ const Wrapper = styled.div`
   .subtitle {
     font-size: 18px;
     text-align: center;
-    color: #f6ff00;
+    color: #0fcff0;
   }  
   .button {
     border: 0;

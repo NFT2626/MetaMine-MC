@@ -24,7 +24,7 @@ const Wrapper = styled.div`
     font-size: 30px;
     font-weight: 700;
     text-align: center;
-    color: #f6ff00;
+    color: #0fcff0;
   }
   
   .text {
