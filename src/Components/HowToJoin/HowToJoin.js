@@ -113,19 +113,18 @@ const Wrapper = styled.div`
 const HowtoJoin = () => {
   const howToJoinArray = [
     {
-      title: "Java",
+      title: "Mint",
       details:
-        "AlternativeSea for Minecraft Java launcher Only.",
+        "Mint a plot to start Building your Metaverse.",
 
-      soft: "Minecraft 1.18.2+",
-      serverIp: "alternativesea.apexmc.co",
-      buttonText: "copy ip",
-      copyLink: "alternativesea.apexmc.co",
-    },
+      buttonText: "Mint",
+      buttonLink: "https://www.alternativesea.com",
+      copyLink: ""
+    }
     {
-      title: "Bedrock",
+      title: "Minecraft",
       details:
-        "AlternativeSea for Minecraft Bedrock launcher Only.",
+        "AlternativeSea server for Minecraft Launchers.",
 
       soft: "Minecraft 1.18.2+",
       serverIp: "alternativesea.apexmc.co",
