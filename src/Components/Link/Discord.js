@@ -39,7 +39,7 @@ const Wrapper = styled.div`
     font-weight: 500;
 
     color: #fff;
-    background: #00800c;
+    background: #009a9a;
     justify-content: center;
     align-items: center;
     padding: 14px 30px;
