@@ -120,7 +120,7 @@ const HowtoJoin = () => {
       buttonText: "Mint",
       buttonLink: "https://www.alternativesea.com",
       copyLink: ""
-    }
+    },
     {
       title: "Minecraft",
       details:
