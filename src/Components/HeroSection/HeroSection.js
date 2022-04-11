@@ -65,8 +65,6 @@ const HeroSection = () => {
       <Wrapper>
         <img src="./images/AlternativeSea2.png" alt="" className="image" />
         <img src="./images/plot3.gif" alt="" className="image" />
-        <iframe width="100%" height="400" position="center" overflow="hidden" src="https://nft2626.github.io/mintbutton/" title="Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
         <Link
           to="learnmore"
